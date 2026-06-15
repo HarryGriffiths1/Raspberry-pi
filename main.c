@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-int main() {
+void age_check() {
 int age;
   
   printf("enter age:");
@@ -18,4 +18,8 @@ int age;
   }
   
 return 0;
+}
+
+int main(){
+  age_check();
 }
