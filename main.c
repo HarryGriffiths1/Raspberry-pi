@@ -17,9 +17,9 @@ int age;
     }
   }
   
-return 0;
 }
 
 int main(){
   age_check();
+  return 0;
 }
