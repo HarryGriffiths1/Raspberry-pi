@@ -3,6 +3,9 @@
 #include <stdio.h>
 
 int main() {
-printf("Hello world");
+int age;
+  printf("enter age:")
+  scanf('%d',&age);
+  printf("you said %d",age);
 return 0;
 }
