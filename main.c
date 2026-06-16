@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <wiringPi.h>
 
-# define BUTTON 0
+# define BUTTON 2
 
 
 void age_check(int r_age) {
@@ -25,6 +25,11 @@ int age;
 
 int main(){
   wiringPiSetup();
+
+  if (wiringPiSetup() == -1) {
+    printf("Failed to initialize wiringPi\n");
+    return 1;
+  }
 
   pinMode(BUTTON, INPUT);
   pullUpDnControl(BUTTON, PUD_UP);
