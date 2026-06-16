@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <wiringPi.h>
 
-# define BUTTON 2
+# define BUTTON 27
 
 
 void age_check(int r_age) {
@@ -24,7 +24,7 @@ int age;
 }
 
 int main(){
-  wiringPiSetup();
+  wiringPiSetupGpio();
 
   if (wiringPiSetup() == -1) {
     printf("Failed to initialize wiringPi\n");
