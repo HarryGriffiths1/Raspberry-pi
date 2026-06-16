@@ -34,7 +34,7 @@ int main(){
         delay(200);
 
         if (digitalRead(BUTTON) == LOW){
-            age_check(18);
+            // age_check(18);
         }
         delay(50); // debounce
     }
