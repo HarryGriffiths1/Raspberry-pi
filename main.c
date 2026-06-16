@@ -29,13 +29,11 @@ int main(){
   pinMode(BUTTON, INPUT);
   pullUpDnControl(BUTTON, PUD_UP);
 
-  while (1)
-    {
-        if (digitalRead(BUTTON) == LOW)
-        {
+  while (1){
+        if (digitalRead(BUTTON) == LOW){
             age_check(18);
+            break;
         }
-
         delay(50); // debounce
     }
 
