@@ -30,7 +30,7 @@ int main(){
   pullUpDnControl(BUTTON, PUD_UP);
 
   while (1){
-        if (digitalRead(BUTTON) == LOW){
+        if (digitalRead(BUTTON) == HIGH){
             age_check(18);
             break;
         }
