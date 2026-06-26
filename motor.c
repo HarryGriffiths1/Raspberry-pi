@@ -4,7 +4,7 @@
 #define STEP 17
 #define DIR 27
 #define EN 22
-#define BUTTON 27
+#define BUTTON 18
 
 void main() {
 wiringPiSetupGpio();
