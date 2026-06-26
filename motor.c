@@ -16,7 +16,7 @@ wiringPiSetupGpio();
     pullUpDnControl(BUTTON, PUD_UP);
 
     digitalWrite(EN, LOW);   // enable
-    digitalWrite(DIR, HIGH); // set direction
+    digitalWrite(DIR, LOW); // set direction
 
     printf("%d\n", digitalRead(BUTTON));
 
