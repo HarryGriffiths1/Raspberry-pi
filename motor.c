@@ -9,6 +9,10 @@
 void main() {
 wiringPiSetupGpio();
 
+    int dir
+    printf("enter dir: 1 towords 0 away");
+    scanf("%d",&dir);
+
     pinMode(STEP, OUTPUT);
     pinMode(DIR, OUTPUT);
     pinMode(EN, OUTPUT);
@@ -16,7 +20,21 @@ wiringPiSetupGpio();
     pullUpDnControl(BUTTON, PUD_UP);
 
     digitalWrite(EN, LOW);   // enable
-    digitalWrite(DIR, LOW); // set direction
+    digitalWrite(DIR, dir); // set direction
+
+    if( DIR == 1){
+
+        int n = 0;
+
+        while( n < 5){
+            digitalWrite(STEP, HIGH);
+        delayMicroseconds(50000);
+
+        digitalWrite(STEP, LOW);
+        delayMicroseconds(50000);
+        n += 1;
+        }
+    }
 
     printf("%d\n", digitalRead(BUTTON));
 
