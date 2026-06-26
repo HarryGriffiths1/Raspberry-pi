@@ -22,7 +22,7 @@ wiringPiSetupGpio();
     digitalWrite(EN, LOW);   // enable
     digitalWrite(DIR, dir); // set direction
 
-    if( DIR == 1){
+    if( DIR == 0){
 
         int n = 0;
 
