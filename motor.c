@@ -18,7 +18,7 @@ wiringPiSetupGpio();
     digitalWrite(EN, LOW);   // enable
     digitalWrite(DIR, HIGH); // set direction
 
-    bool pressed = 0;
+    bool pressed = 1;
 
     while(pressed){
 
