@@ -26,5 +26,6 @@ wiringPiSetupGpio();
 
         digitalWrite(STEP, LOW);
         delayMicroseconds(50000);
+        printf((digitalRead(BUTTON) == LOW));
     }
 }
