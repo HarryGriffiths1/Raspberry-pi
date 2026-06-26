@@ -18,9 +18,9 @@ wiringPiSetupGpio();
     while (1){
 
         digitalWrite(STEP, HIGH);
-        delayMicroseconds(50000);
+        delayMicroseconds(50);
 
         digitalWrite(STEP, LOW);
-        delayMicroseconds(50000);
+        delayMicroseconds(500);
     }
 }
