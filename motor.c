@@ -20,7 +20,7 @@ wiringPiSetupGpio();
 
     printf("%d\n", digitalRead(BUTTON));
 
-    while(!(digitalRead(BUTTON) == HIGH)){
+    while((digitalRead(BUTTON) == HIGH)){
 
         digitalWrite(STEP, HIGH);
         delayMicroseconds(50000);
