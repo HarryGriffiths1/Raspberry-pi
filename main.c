@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <wiringPi.h>
 
+# define BUTTON 27
+
 
 void age_check(int r_age) {
 int age;
@@ -29,14 +31,14 @@ int main(){
     return 1;
   }
 
-  pinMode(17, INPUT);
-  pullUpDnControl(17, PUD_DOWN);
+  pinMode(BUTTON, INPUT);
+  pullUpDnControl(BUTTON, PUD_UP);
 
   while (1){
-        printf("%d\n", digitalRead(17));
+        printf("%d\n", digitalRead(BUTTON));
         delay(200);
 
-        if (digitalRead(17) == LOW){
+        if (digitalRead(BUTTON) == LOW){
             // age_check(18);
         }
         delay(50); // debounce
