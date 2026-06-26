@@ -15,8 +15,8 @@ wiringPiSetupGpio();
     digitalWrite(EN, LOW);   // enable
     digitalWrite(DIR, HIGH); // set direction
 
-    while 1{
-        
+    while (1){
+
         digitalWrite(STEP, HIGH);
         delayMicroseconds(500);
 
