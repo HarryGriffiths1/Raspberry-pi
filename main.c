@@ -33,10 +33,10 @@ int main(){
   pullUpDnControl(17, PUD_DOWN);
 
   while (1){
-        printf("%d\n", digitalRead(BUTTON));
+        printf("%d\n", digitalRead(17));
         delay(200);
 
-        if (digitalRead(BUTTON) == LOW){
+        if (digitalRead(17) == LOW){
             // age_check(18);
         }
         delay(50); // debounce
