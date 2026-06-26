@@ -18,9 +18,9 @@ wiringPiSetupGpio();
     digitalWrite(EN, LOW);   // enable
     digitalWrite(DIR, HIGH); // set direction
 
-    bool pressed = 0
+    bool pressed = 0;
 
-    while (pressed){
+    while(pressed){
 
         digitalWrite(STEP, HIGH);
         delayMicroseconds(50000);
@@ -28,6 +28,6 @@ wiringPiSetupGpio();
         digitalWrite(STEP, LOW);
         delayMicroseconds(50000);
         
-        pressed = !(digitalRead(BUTTON) == LOW)
+        pressed = !(digitalRead(BUTTON) == LOW);
     }
 }
