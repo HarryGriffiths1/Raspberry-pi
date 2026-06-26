@@ -9,7 +9,7 @@
 void main() {
 wiringPiSetupGpio();
 
-    int dir
+    int dir;
     printf("enter dir: 1 towords 0 away");
     scanf("%d",&dir);
 
