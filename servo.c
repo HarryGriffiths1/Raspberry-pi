@@ -13,8 +13,8 @@ int main(){
     pwmSetClock(192); // need 50hz so 19200/ range(2000) / clock(192) = 0.05khz
 
     pwmWrite(SERVO, 100); // set 0
-    delayMicroseconds(5000);
+    delayMicroseconds(500000);
     pwmWrite(SERVO, 150); // set 90
-    delayMicroseconds(5000);
+    delayMicroseconds(500000);
     pwmWrite(SERVO, 200); // set 180
 }
