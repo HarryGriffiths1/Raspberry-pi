@@ -8,18 +8,11 @@
 int angleToTick(int angle){
     // 0 = 50
     // 180 = 260
-    //210/180 = 1.1666666
+    //210/180 = 1.1666667
+
     double multiplyer = 210/180;
-    if(angle == 0){
-        return 50;
-    }
-    else if(angle = 180){
-        return 260;
-    }
-    else if(angle != 0){
-        int ticks = (int)(50+(angle*multiplyer);
-        return ticks;
-    }
+    int ticks = (int)(50+(angle*multiplyer);
+    return ticks;
 }
 
 int main(){
