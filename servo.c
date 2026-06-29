@@ -11,7 +11,7 @@ int angleToTick(int angle){
     //210/180 = 1.1666667
 
     double multiplyer = 210/180;
-    int ticks = (int)(50+(angle*multiplyer);
+    int ticks = (int)(50+(angle*multiplyer));
     return ticks;
 }
 
