@@ -32,7 +32,7 @@ int main(){
     printf("go to:");
     scanf("%d",&pulse);
 
-    pwmWrite(SERVO, pulse); // set to place of "pulse"
+    pwmWrite(SERVO, angleToTick(pulse)); // set to place of "pulse"
 
     return 0;
 }
