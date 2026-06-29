@@ -14,10 +14,10 @@ int angleToTick(int angle){
         return 50;
     }
     else if(angle = 180){
-        return 260
+        return 260;
     }
     else{
-        return (int)(50+(angle*multiplyer))
+        return (int)(50+(angle*multiplyer));
     }
 }
 
