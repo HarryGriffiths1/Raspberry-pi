@@ -3,7 +3,23 @@
 #include <stdio.h>
 #include <wiringPi.h>
 
-#define SERVO 13
+#define SERVO 13 // tick from 50 to 260
+
+int angleToTick(int angle){
+    // 0 = 50
+    // 180 = 260
+    //210/180 = 1.1666666
+    double multiplyer = 210/180;
+    if(angle == 0){
+        return 50;
+    }
+    elif(angle = 180){
+        return 260
+    }
+    else{
+        return (int)(50+(angle*multiplyer))
+    }
+}
 
 int main(){
 
@@ -17,4 +33,6 @@ int main(){
     scanf("%d",&pulse);
 
     pwmWrite(SERVO, pulse); // set to place of "pulse"
+
+    return 0;
 }
