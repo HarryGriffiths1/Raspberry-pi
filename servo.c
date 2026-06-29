@@ -13,7 +13,7 @@ int angleToTick(int angle){
     if(angle == 0){
         return 50;
     }
-    elif(angle = 180){
+    else if(angle = 180){
         return 260
     }
     else{
