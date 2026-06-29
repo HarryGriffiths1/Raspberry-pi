@@ -17,4 +17,6 @@ int main(){
     pwmWrite(SERVO, 120); // set 90
     delayMicroseconds(500000);
     pwmWrite(SERVO, 150); // set 180
+    delayMicroseconds(500000);
+    pwmWrite(SERVO, 120); // set 90
 }
